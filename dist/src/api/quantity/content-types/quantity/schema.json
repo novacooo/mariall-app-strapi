@@ -1,0 +1,33 @@
+{
+    "kind": "collectionType",
+    "collectionName": "quantities",
+    "info": {
+        "singularName": "quantity",
+        "pluralName": "quantities",
+        "displayName": "Quantity"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "quantity": {
+            "type": "integer",
+            "required": true,
+            "min": 0,
+            "default": 0
+        },
+        "product": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::product.product",
+            "inversedBy": "quantities"
+        },
+        "employee": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::employee.employee",
+            "inversedBy": "quantities"
+        }
+    }
+}
