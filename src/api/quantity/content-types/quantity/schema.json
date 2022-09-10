@@ -4,7 +4,8 @@
   "info": {
     "singularName": "quantity",
     "pluralName": "quantities",
-    "displayName": "Quantity"
+    "displayName": "Quantity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,18 @@
       "relation": "manyToOne",
       "target": "api::employee.employee",
       "inversedBy": "quantities"
+    },
+    "year": {
+      "type": "integer",
+      "required": true,
+      "max": 2050,
+      "min": 2022
+    },
+    "month": {
+      "type": "integer",
+      "required": true,
+      "max": 12,
+      "min": 1
     }
   }
 }
