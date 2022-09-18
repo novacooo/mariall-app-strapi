@@ -4,10 +4,11 @@
     "info": {
         "singularName": "product",
         "pluralName": "products",
-        "displayName": "Product"
+        "displayName": "Product",
+        "description": ""
     },
     "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
     },
     "pluginOptions": {},
     "attributes": {
@@ -25,12 +26,12 @@
             "maxLength": 80
         },
         "image": {
-            "allowedTypes": [
-                "images"
-            ],
             "type": "media",
             "multiple": false,
-            "required": false
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
         },
         "quantities": {
             "type": "relation",
