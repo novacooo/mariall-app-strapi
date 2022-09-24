@@ -34,7 +34,7 @@
             "type": "integer",
             "required": true,
             "max": 2050,
-            "min": 2022
+            "min": 2015
         },
         "month": {
             "type": "integer",
