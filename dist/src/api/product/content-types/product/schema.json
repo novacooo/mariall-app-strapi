@@ -43,6 +43,11 @@
             "type": "decimal",
             "required": true,
             "min": 0
+        },
+        "active": {
+            "type": "boolean",
+            "default": true,
+            "required": true
         }
     }
 }
