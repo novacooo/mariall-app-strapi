@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salaries",
+  "info": {
+    "singularName": "salary",
+    "pluralName": "salaries",
+    "displayName": "Salary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "salary": {
+      "required": true,
+      "min": 0,
+      "type": "decimal"
+    },
+    "year": {
+      "type": "integer",
+      "min": 2015,
+      "max": 2050,
+      "required": true
+    },
+    "month": {
+      "type": "integer",
+      "min": 1,
+      "max": 12,
+      "required": true
+    }
+  }
+}
